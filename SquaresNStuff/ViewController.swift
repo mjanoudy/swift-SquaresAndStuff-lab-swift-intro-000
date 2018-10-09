@@ -11,5 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileImageView.layer.borderColor = UIColor.white.cgColor
+        profileImageView.layer.borderWidth = 3.0
+        profileImageView.layer.cornerRadius = 10.0
+        profileImageView.layer.masksToBounds = true
     }
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    
 }
